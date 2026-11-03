@@ -10,11 +10,12 @@ The project builds an AI agent in **Microsoft Foundry** that acts as a Microsoft
 ## Features
 
 - **Agent in Microsoft Foundry** using an existing model deployed in the Foundry project
-- **System instructions** that define the agent as a Microsoft engineer who helps build applications with Microsoft technology
+- **System instructions** define the agent as a Microsoft engineer who helps build applications with Microsoft technology
 - **Code Interpreter** to run code, do calculations and generate charts
 - **MCP server integration:** [Microsoft Learn MCP server](https://learn.microsoft.com/api/mcp), so Microsoft product questions are answered from accurate, up-to-date documentation
 - **Custom data:** sample PDF documents (generated with GenAI) indexed with Azure AI Search and connected to the agent as a knowledge base
 - **Web interface** built with Streamlit
+- **Issues** the user can report any issue to this repository using the agent. 
 
 ## Architecture
 
@@ -37,8 +38,8 @@ User ──► Python client (terminal / Streamlit)
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-user>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/jongar3/Private-chat-bot-challenge-4.git
+cd Private-chat-bot-challenge-4
 
 # 2. Create and activate a virtual environment
 python -m venv venv
@@ -73,3 +74,4 @@ streamlit run web.py
 **Instructions:**
 
 > You are a Microsoft engineer. You must assist and help create applications with Microsoft technology such as .NET, answer questions, etc. Please direct all Microsoft product related queries to the Microsoft Learn MCP server for accurate and up-to-date documentation. When answering from the PDFs, say which document the answer came from.
+> When the user asks to report a bug or create a task, open an issue in the repository jongar3/Private-chat-bot-challenge-4 using the GitHub MCP server. Always show the issue title and body before creating it.
