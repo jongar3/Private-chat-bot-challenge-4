@@ -50,11 +50,9 @@ pip install -r requirements.txt
 
 ```
 
-On macOS / Linux use `export` instead of `set`.
-
 ## Authentication
 
-The client uses `DefaultAzureCredential` (for example after `az login`) and falls back to an interactive browser login. No keys or secrets are stored in the code.
+The client uses `DefaultAzureCredential` (for example after `az login`) and falls back to an interactive browser login. No secrets in the code.
 
 ## Usage
 
